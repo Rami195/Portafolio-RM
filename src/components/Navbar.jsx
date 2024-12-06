@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { BsGithub, BsInstagram, BsLinkedin, BsTwitterX } from "react-icons/bs";
 import { BiX, BiMenu } from "react-icons/bi";
 
@@ -9,8 +9,23 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        setIsOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
-    <nav className="fixed top-0 z-10 flex w-full items-center justify-between border-b border-b-gray-700 bg-black/70 px-16 py-6 text-white backdrop-blur-md md:justify-evenly">
+    <nav className="fixed top-0 z-20 flex w-full items-center justify-between border-b border-b-gray-700 bg-black/70 px-16 py-2 md:py-6 text-white backdrop-blur-md md:justify-evenly">
       <a
         href="#home"
         className="bg-gradient-to-r from-red-900 to-red-500 bg-clip-text text-transparent opacity-80 text-3xl font-semibold transition-all duration-300 hover:opacity-100"
@@ -18,13 +33,12 @@ const Navbar = () => {
         RM
       </a>
 
-
       <ul className="hidden md:flex gap-10">
         <a
           href="#home"
           className="cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100"
         >
-          <li>Home</li>
+          <li>Inicio</li>
         </a>
         <a
           href="#tech"
@@ -92,13 +106,13 @@ const Navbar = () => {
       )}
 
       {isOpen && (
-        <div className="fixed right-0 top-[84px] flex h-screen w-1/2 flex-col items-start justify-start gap-10 border border-gray-800 bg-black/90 p-12">
+        <div className="fixed right-0 top-full flex h-screen w-1/2 flex-col items-start justify-start gap-10 border border-gray-800 bg-black/90 p-12">
           <ul className="flex flex-col gap-8">
             <a
               href="#home"
               className="cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100"
             >
-              <li>Home</li>
+              <li>Inicio</li>
             </a>
             <a
               href="#tech"

@@ -8,7 +8,7 @@ const Tech = () => {
   }
 
   return (
-    <div id="tech" className="flex min-h-[70vh] w-full flex-col items-center justify-center 
+    <div id="tech" className="flex min-h-[70vh] w-full flex-col items-center justify-center pt-28 
     gap-16 md:gap-5">
       <motion.h1 
       variants={variants}
