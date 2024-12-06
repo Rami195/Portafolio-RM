@@ -26,6 +26,9 @@ En este proyecto, utilicé las siguientes tecnologías:
 
 ## Despliegue
 
+<<<<<<< HEAD
 Utilicé Vercel para realizar el despliegue de mi portafolio. Vercel es una plataforma que facilita mucho el proceso de deploy, ofreciendo una integración continua y un flujo de trabajo sencillo para desarrolladores. Puedes ver mi portafolio desplegado en https://portafolio-rm-kappa.vercel.app/ 
+=======
+Utilicé Vercel para realizar el despliegue de mi portafolio. Vercel es una plataforma que facilita mucho el proceso de deploy, ofreciendo una integración continua y un flujo de trabajo sencillo para desarrolladores. Puedes ver mi portafolio desplegado en https://portafolio-rm-kappa.vercel.app/
+>>>>>>> 741bf4dfa6b41ae30602254370e14680b4f04dfe
 
-## Conclusión
