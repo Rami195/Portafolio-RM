@@ -1,4 +1,4 @@
-import { BiLogoCss3, BiLogoDocker, BiLogoHtml5, BiLogoJava, BiLogoJavascript, BiLogoNodejs, BiLogoPostgresql, BiLogoSpringBoot, BiLogoTailwindCss, BiLogoTypescript } from "react-icons/bi"
+import { BiLogoCss3, BiLogoBootstrap, BiLogoHtml5, BiLogoJava, BiLogoJavascript, BiLogoNodejs, BiLogoPostgresql, BiLogoSpringBoot, BiLogoTailwindCss, BiLogoTypescript } from "react-icons/bi"
 import {motion} from "framer-motion"
 
 const Tech = () => {
@@ -33,8 +33,8 @@ const Tech = () => {
         hover:-translate-y-5 sm:text-[100px] md:text-[120px] "/>
         </motion.div>
 
-        <motion.div >
-          <BiLogoDocker className="cursor-pointer text-[80px] text-blue-600 transition-all duration-300
+         <motion.div >
+          <BiLogoBootstrap className="cursor-pointer text-[80px] text-blue-600 transition-all duration-300
         hover:-translate-y-5 sm:text-[100px] md:text-[120px] "/>
         </motion.div>
 
