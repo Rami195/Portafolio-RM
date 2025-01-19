@@ -1,6 +1,9 @@
 import image1 from "/public/Login.png";
 import image2 from "/public/tienda.png";
 import image3 from "/public/Heroes.png";
+import image4 from "/public/Bugs.png";
+import image5 from "/public/landing.png";
+import image6 from "/public/Ecommerce.png";
 import { motion } from "framer-motion";
 import PropTypes from 'prop-types';
 
@@ -24,8 +27,29 @@ const Projects = () => {
       image: image3,
       title: "Heroes App",
       description: "Realicé una app interactiva en donde tenemos un login y luego podemos ver información de nuestros héroes favoritos y ordenarlos según su universo. usario: admin, contra: 1234.",
-      technologies: ["HTML", "CSS", "JS", "React", "Typescript", "Redux"],
+      technologies: ["HTML", "CSS", "React", "Typescript", "Redux"],
       link: "https://heroes-app-virid.vercel.app/Login",
+    },
+    {
+      image: image4,
+      title: "BugsLess Design",
+      description: "En este proyecto, desarrollé una página de contacto para BugsLess Design, una empresa que ofrece servicios web. La página está diseñada para que los clientes potenciales puedan ponerse en contacto fácilmente con la empresa y obtener información sobre los servicios ofrecidos.",
+      technologies: ["Tailwind", "CSS", "JS", "React", "Redux"],
+      link: "https://heroes-app-virid.vercel.app/Login",
+    },
+    {
+      image: image5,
+      title: "Landing Wines",
+      description: "Desarrollé una Landing Page para un local de vinos. La página está diseñada para atraer a los visitantes y proporcionarles información detallada sobre los diferentes tipos de vinos disponibles.",
+      technologies: ["Tailwind", "CSS", "React", "Typescript", "Redux"],
+      link: "https://landing-wines.vercel.app/",
+    },
+    {
+      image: image6,
+      title: "VINEYARD",
+      description: "Desarrollé una tienda para una bodega de vinos. La aplicación incluye un catálogo de productos, un sistema de registro y autenticación de usuarios, y un proceso de pago seguro.",
+      technologies: ["Tailwind", "CSS", "React", "Typescript", "Redux"],
+      link: "https://ecommerce-blue-chi.vercel.app/",
     },
   ];
 
@@ -60,8 +84,7 @@ const Projects = () => {
             <div className="flex flex-col gap-3">
               <h2 className="text-2xl font-semibold">{project.title}</h2>
             </div>
-            <p className="text-gray-400">{project.description} <a target="_blank"
-              rel="noopener noreferrer" href={project.link} className="text-gray-600 hover:text-red-600 transition-all duration-300">
+            <p className="text-gray-400">{project.description} <a href={project.link} className="text-red-600 hover:text-white hover:font-bold transition-all duration-300">
               Ver más
             </a>
             </p>
@@ -96,7 +119,7 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="flex min-h-screen w-full flex-col items-center justify-center gap-16 p-4 md:px-14 py-20 md:py-24"
+      className="flex min-h-screen w-full flex-col items-center justify-center gap-16 p-4 md:px-14 md:py-24"
     >
       <ScrollReveal>
         <h1 className="text-4xl font-light text-white md:text-6xl">Projectos</h1>
