@@ -155,7 +155,7 @@ const Navbar = () => {
             <li>
               <a target="_blank"
                 rel="noopener noreferrer"
-                href="www.linkedin.com/in/ramiro-martinez-315666252"
+                href="https://www.linkedin.com/in/ramiro-martinez-315666252/"
                 className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-red-500 hover:opacity-100"
               >
                 <BsLinkedin />
