@@ -122,7 +122,7 @@ const Projects = () => {
       className="flex min-h-screen w-full flex-col items-center justify-center gap-16 p-4 md:px-14 md:py-24"
     >
       <ScrollReveal>
-        <h1 className="text-4xl font-light text-white md:text-6xl">Projectos</h1>
+        <h1 className="text-4xl font-light text-white md:text-6xl">Proyectos</h1>
       </ScrollReveal>
       <div className="flex w-full max-w-[1000px] flex-col gap-16 text-white">
         {projectsData.map((project, index) => (
