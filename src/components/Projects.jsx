@@ -51,6 +51,13 @@ const Projects = () => {
       technologies: ["Tailwind", "CSS", "React", "Typescript", "Redux"],
       link: "https://ecommerce-blue-chi.vercel.app/",
     },
+      {
+      image: image7,
+      title: "ASAP Consultores",
+      description: "Junto con mi equipo de BuglessDisign realizamos la pagina estilo landing page para la empresa ASAP.",
+      technologies: ["Tailwind", "CSS", "React", "Typescript", "JS"],
+      link: "https://www.asapconsultores.com.ar/",
+    }
   ];
 
   const ScrollReveal = ({ children }) => {
