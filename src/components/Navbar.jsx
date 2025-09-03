@@ -50,7 +50,7 @@ const Navbar = () => {
           href="#projects"
           className="cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100"
         >
-          <li>Projectos</li>
+          <li>Proyectos</li>
         </a>
         <a
           href="#contact"
