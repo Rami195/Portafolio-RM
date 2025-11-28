@@ -5,6 +5,7 @@ import image4 from "/public/Bugs.png";
 import image5 from "/public/landing.png";
 import image6 from "/public/Ecommerce.png";
 import image7 from "/public/ASAP.png";
+import image8 from "/public/image8.png";
 import { motion } from "framer-motion";
 import PropTypes from 'prop-types';
 
@@ -58,6 +59,14 @@ const Projects = () => {
       description: "Junto con mi equipo de BuglessDisign realizamos la pagina estilo landing page para la empresa ASAP.",
       technologies: ["Tailwind", "CSS", "React", "Typescript", "JS"],
       link: "https://www.asapconsultores.com.ar/",
+    },
+    {
+     image: image8,
+     title: "Sistema de Gestión de Inventario – MVP",
+     description:
+     "Desarrollé, junto con mi equipo, un sistema de gestión de inventario para el Trabajo Práctico de Investigación Operativa 2025. Incluye un frontend en Next.js para la visualización de datos y un backend en Node.js/Express con Prisma y PostgreSQL para la gestión de artículos, stock y ventas.",
+     technologies: ["Next.js","React","TailwindCSS","Typescript","Node.js","Express","Prisma","PostgreSQL"],
+     link: "https://github.com/TuteSeta/FullstockFront"
     }
   ];
 
