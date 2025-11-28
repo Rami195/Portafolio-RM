@@ -6,6 +6,7 @@ import image5 from "/public/landing.png";
 import image6 from "/public/Ecommerce.png";
 import image7 from "/public/ASAP.png";
 import image8 from "/public/image8.png";
+import image9 from "/public/lean.png";
 import { motion } from "framer-motion";
 import PropTypes from 'prop-types';
 
@@ -63,11 +64,17 @@ const Projects = () => {
     {
      image: image8,
      title: "Sistema de Gestión de Inventario – MVP",
-     description:
-     "Desarrollé, junto con mi equipo, un sistema de gestión de inventario para el Trabajo Práctico de Investigación Operativa 2025. Incluye un frontend en Next.js para la visualización de datos y un backend en Node.js/Express con Prisma y PostgreSQL para la gestión de artículos, stock y ventas.",
+     description:"Desarrollé, junto con mi equipo, un sistema de gestión de inventario para el Trabajo Práctico de Investigación Operativa 2025. Incluye un frontend en Next.js para la visualización de datos y un backend en Node.js/Express con Prisma y PostgreSQL para la gestión de artículos, stock y ventas.",
      technologies: ["Next.js","React","TailwindCSS","Typescript","Node.js","Express","Prisma","PostgreSQL"],
      link: "https://github.com/TuteSeta/FullstockFront"
-    }
+    },
+    {
+    image: image9,
+    title: "Sitio Web Corporativo – Lean Vision",
+    description:"Como parte de mi pasantía en Lean Vision colaboré en el desarrollo del sitio web corporativo de la empresa, utilizando React con Vite y TailwindCSS. Implementé componentes reutilizables, optimicé el rendimiento y participé en la maquetación responsive siguiendo la identidad visual de la marca.",
+    technologies: ["React", "Vite", "TailwindCSS", "JavaScript", "HTML", "CSS"],
+    link: "https://leanvision.ai/" 
+}
   ];
 
   const ScrollReveal = ({ children }) => {
